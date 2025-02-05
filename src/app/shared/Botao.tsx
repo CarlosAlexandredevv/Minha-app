@@ -5,6 +5,7 @@ export interface BotaoProps {
   onClick?: () => void;
   destacado?: boolean;
   children: React.ReactNode;
+  maior?: boolean;
 }
 
 export default function Botao(props: BotaoProps) {
@@ -15,7 +16,9 @@ export default function Botao(props: BotaoProps) {
           props.destacado
             ? 'bg-zinc-100 text-black hover:bg-zinc-200'
             : 'bg-black text-zinc-400 hover:border-zinc-400'
-        } border border-zinc-600  rounded-lg px-4 py-2`}
+        }  ${
+          props.maior ? 'px-4 py-2' : 'px-3 py-1.5'
+        } border border-zinc-600  rounded-lg text-sm`}
       >
         {props.children}
       </button>

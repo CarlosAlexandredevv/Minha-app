@@ -1,4 +1,5 @@
 import Principal from './landing/Principal';
+import Recursos from './landing/Recursos';
 import Titulo from './shared/Titulo';
 
 export default function Page() {
@@ -7,8 +8,10 @@ export default function Page() {
       <Principal />
       <Titulo
         texto="Nossos Recursos"
-        legenda="Lorem ipsum dolor sit amet, consectetur "
+        legenda="Lorem ipsum dolor sit amet, consectetur"
+        className="mb-7"
       />
+      <Recursos />
     </div>
   );
 }

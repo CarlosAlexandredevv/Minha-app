@@ -1,3 +1,9 @@
+import Principal from './landing/Principal';
+
 export default function Page() {
-  return <div>Página Externa</div>;
+  return (
+    <div className="flex flex-col">
+      <Principal />
+    </div>
+  );
 }

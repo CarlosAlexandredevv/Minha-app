@@ -11,8 +11,8 @@ export default function MenuItem(props: MenuItemProps) {
   return (
     <Link
       href={props.url}
-      className={`flex items-center ${
-        props.selecionado ? 'text-white' : 'text-zinc-300'
+      className={`flex items-center hover:text-white duration-300 ${
+        props.selecionado ? 'text-white' : 'text-zinc-500'
       }`}
     >
       <span>{props.icone}</span>

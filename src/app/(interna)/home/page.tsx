@@ -1,4 +1,6 @@
+import { IconBug, IconLoader } from '@tabler/icons-react';
 import Titulo from '../shared/Titulo';
+import Exercicio from './Exercicio';
 
 export default function Page() {
   return (
@@ -7,7 +9,16 @@ export default function Page() {
         texto="Área do Aluno"
         legenda="Lista de todos os exercícios implementados"
       />
-      <div className="py-10">Pagina interna</div>
+      <div className="grid grid-cols-4 gap-5 mt-10">
+        <Exercicio url="/loading" titulo="Loading" icone={<IconLoader />} />
+        <Exercicio url="/erro" titulo="Erro" icone={<IconBug />} />
+        <Exercicio url="/loading" titulo="Loading" icone={<IconLoader />} />
+        <Exercicio url="/erro" titulo="Erro" icone={<IconBug />} />
+        <Exercicio url="/loading" titulo="Loading" icone={<IconLoader />} />
+        <Exercicio url="/erro" titulo="Erro" icone={<IconBug />} />
+        <Exercicio url="/loading" titulo="Loading" icone={<IconLoader />} />
+        <Exercicio url="/erro" titulo="Erro" icone={<IconBug />} />
+      </div>
     </div>
   );
 }
